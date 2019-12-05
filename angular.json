@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "ngx-camera": {
+      "projectType": "library",
+      "root": "projects/ngx-camera",
+      "sourceRoot": "projects/ngx-camera/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-camera/tsconfig.lib.json",
+            "project": "projects/ngx-camera/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-camera/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-camera/src/test.ts",
+            "tsConfig": "projects/ngx-camera/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-camera/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-camera/tsconfig.lib.json",
+              "projects/ngx-camera/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "camera"
 }

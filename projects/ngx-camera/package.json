@@ -1,0 +1,47 @@
+{
+  "name": "ngx-camera",
+  "author": {
+    "name": "Parth Jansari",
+    "email": "parthjansari@outlook.com",
+    "url": "https://github.com/parth181195/"
+  },
+  "keywords": [
+    "Angular",
+    "js",
+    "ngx",
+    "camera",
+    "webcam",
+    "webrtc"
+  ],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parth181195/ngx-route-highlighter.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^9.0.0-rc.4",
+    "@angular/core": "^9.0.0-rc.4",
+    "tslib": "^1.10.0"
+  }
+}
+//   "description": "very basic package to add classes to a package when you are on a perticular route",
+//   "homepage": "https://github.com/parth181195/ngx-route-highlighter/blob/master/README.md",
+//   "bugs": {
+//     "url": "https://github.com/parth181195/ngx-route-highlighter/issues",
+//     "email": "parthjansari@outlook.com"
+//   },
+//   "license": "MIT",
+//   "main": "bundles/ngx-route-highlighter.umd.js",
+//   "module": "fesm5/ngx-route-highlighter.js",
+//   "es2015": "fesm2015/ngx-route-highlighter.js",
+//   "esm5": "esm5/ngx-route-highlighter.js",
+//   "esm2015": "esm2015/ngx-route-highlighter.js",
+//   "fesm5": "fesm5/ngx-route-highlighter.js",
+//   "fesm2015": "fesm2015/ngx-route-highlighter.js",
+//   "typings": "ngx-route-highlighter.d.ts",
+//   "metadata": "ngx-route-highlighter.metadata.json",
+//   "sideEffects": false,
+//   "dependencies": {
+//     "tslib": "^1.9.0"
+//   }
+// }

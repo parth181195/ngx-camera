@@ -1,0 +1,83 @@
+.camera-wrapper
+  height: 100%
+  width: 100%
+  margin: 30px 0
+  position: relative
+  display: flex
+  justify-content: center
+
+  .snap
+    z-index: 99
+    width: 60px
+    opacity: 0.5
+    background: none
+    border: solid 2px white
+    height: 60px
+    left: 50%
+    bottom: 10px
+    cursor: pointer
+    border-radius: 60px
+    display: block
+    padding: 2px
+    position: absolute
+    transform: translate(-50%)
+    outline: none
+
+    transition: all 0.3s ease
+    &.capture
+      z-index: 99
+      display: none
+      &.active
+        display: block
+    &.accept, &.reject
+      opacity: 0
+      z-index: 90
+      &.accept
+
+        span
+          background: #05c46b
+      &.reject
+
+        span
+          background: #ff3f34
+      &.active
+        opacity: 1
+        &.accept
+          left: 60%
+        &.reject
+          left: 40%
+
+    &:active
+      opacity: 1
+      outline: none
+
+    span
+      height: 100%
+      width: 100%
+      background: white
+      display: block
+      border-radius: 60px
+
+  .camera
+    border-radius: 20px
+    overflow: hidden
+
+.button-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  button
+    font-size: 1.2em
+    padding: 10px 20px
+    border: none
+    margin: 10px
+    cursor: pointer
+    background: #485460
+    color: white
+    border-radius: 10px
+    transition: all 0.2s ease
+
+    &:hover
+      background: #1e272e
