@@ -45,5 +45,29 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.6.4"
-  }
+  },
+  "author": {
+    "name": "Parth Jansari",
+    "email": "parthjansari@outlook.com",
+    "url": "https://github.com/parth181195/"
+  },
+  "keywords": [
+    "Angular",
+    "js",
+    "ngx",
+    "camera",
+    "webcam",
+    "webrtc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parth181195/ngx-camera.git"
+  },
+  "description": "simple package for accessing camera in angular",
+  "homepage": "https://github.com/parth181195/ngx-camera/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/parth181195/ngx-camera/issues",
+    "email": "parthjansari@outlook.com"
+  },
+  "license": "MIT"
 }
