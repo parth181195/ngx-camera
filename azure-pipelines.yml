@@ -16,6 +16,9 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    npm install -g json
+    json -I -f projects/ngx-camera/package.json -e "this.version='$(version)'"
+    cat projects/ngx-camera/package.json
     npm install -g @angular/cli
     npm install
     ng build --prod
